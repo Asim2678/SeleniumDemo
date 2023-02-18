@@ -12,5 +12,6 @@ public class LinksDemo {
         driver.get(appurl);
 
         driver.findElement(By.linkText("Forgot Password?")).click();
+        // This is modified.
     }
 }
