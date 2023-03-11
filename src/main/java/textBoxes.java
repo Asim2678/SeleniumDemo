@@ -18,8 +18,9 @@ public class textBoxes {
         driver.get(appurl);
 //        WebDriverWait mywaitvar =new WebDriverWait(driver, Duration.ofSeconds(10));
 //        mywaitvar.until(ExpectedConditions.visibilityOf(login_input));
+
         WebElement ExpliciteWait = new WebDriverWait(driver, Duration.ofSeconds(10))
-                .until(ExpectedConditions.elementToBeClickable(By.className("login_input")));//explicite wait
+        .until(ExpectedConditions.elementToBeClickable(By.className("login_input")));//explicite wait
 
         driver.findElement(By.className("login_input")).sendKeys("HI");
 

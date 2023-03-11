@@ -1,6 +1,11 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
 
 public class OnlyTestingblog {
 
@@ -14,7 +19,7 @@ public class OnlyTestingblog {
 
         driver.findElement(By.partialLinkText("New User")).click();
         driver.findElement(By.name("tnc_box")).click();
-        Thread.sleep(2000);
+       // Thread.sleep(2000);
 
         //driver.findElement(By.name("username")).sendKeys("Test1");
        // driver.findElement(By.className("reg_input")).sendKeys("Test1");
@@ -23,12 +28,19 @@ public class OnlyTestingblog {
        // driver.findElement(By.cssSelector("#username")).sendKeys("Text1");
               // cssSelector #example for id
 
+        WebElement ExpliciteWait = new WebDriverWait(driver, Duration.ofSeconds(10))
+        .until(ExpectedConditions.elementToBeClickable(By.className("login_input")));//explicite wait
+
         driver.findElement(By.cssSelector(".reg_input")).sendKeys("Text1");
+
+
+        //driver.findElement(By.id("Reset"))
+
         // cssSelector #example for class
 
-        System.out.println(driver.getCurrentUrl());
+        System.out.println("test pass");
 
-        driver.close();
+       // driver.close();
 
     }
 }
