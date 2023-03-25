@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <parameter name="username" value="asim"></parameter>
+    <parameter name="password" value="bassra"></parameter>
+    <test verbose="2" preserve-order="true"
+          name="C:/Users/mabassra/OneDrive - DP World/Documents/Projects/untitled/src/main/java/TestNGFramework/ParameterTest.java">
+        <classes>
+            <class name="TestNGFramework.ParameterTest">
+                <methods>
+                    <include name="testone"/>
+                    <include name="testwo"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
