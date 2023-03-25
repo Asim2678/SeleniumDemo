@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true"
+          name="C:/Users/mabassra/OneDrive - DP World/Documents/Projects/untitled/src/main/java/TestNGFramework/ExcludeGrouds.java">
+        <groups>
+            <run>
+                <include name="include-group"></include>
+<!--                <include name="exclude-group"></include>-->
+            </run>
+        </groups>
+        <classes>
+            <class name="TestNGFramework.ExcludeGrouds">
+                <methods>
+<!--                    <include name="tesMethodone"/>-->
+<!--                    <include name="tesMethodtwo"/>-->
+<!--                    <include name="tesMethodthree"/>-->
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

@@ -18,6 +18,10 @@ public class textBoxes {
         driver.get(appurl);
 //        WebDriverWait mywaitvar =new WebDriverWait(driver, Duration.ofSeconds(10));
 //        mywaitvar.until(ExpectedConditions.visibilityOf(login_input));
+//        ChromeOptions chromeOptions = new ChromeOptions();
+//        chromeOptions.setPageLoadStrategy(PageLoadStrategy.EAGER);
+//        chromeOptions.addArguments("--remote-allow-origins=*");
+//        WebDriver driver = new ChromeDriver(chromeOptions);
 
         WebElement ExpliciteWait = new WebDriverWait(driver, Duration.ofSeconds(10))
         .until(ExpectedConditions.elementToBeClickable(By.className("login_input")));//explicite wait

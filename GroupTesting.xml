@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <parameter name="browser" value="chorme"></parameter>
+    <test verbose="2" preserve-order="true"
+
+          name="C:/Users/mabassra/OneDrive - DP World/Documents/Projects/untitled/src/main/java/TestNGFramework/GroupTests.java">
+        <groups>
+            <run>
+                <include name="Module02"></include>
+
+            </run>
+
+        </groups>
+        <classes>
+
+            <class name="TestNGFramework.GroupTests">
+<!--                <methods>-->
+<!--                    <include name="Method01"/>-->
+<!--                    <include name="Method02"/>-->
+<!--                    <include name="Method03"/>-->
+<!--                    <include name="Method04"/>-->
+<!--                    <include name="Method05"/>-->
+<!--                </methods>-->
+            </class>
+        </classes>
+    </test>
+</suite>
