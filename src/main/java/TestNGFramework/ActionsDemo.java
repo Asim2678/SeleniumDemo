@@ -13,7 +13,7 @@ public class ActionsDemo {
 
     @Test
     public void Webtabledmo() throws InterruptedException {
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\mabassra\\Downloads\\ChromeDriver2\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\mabassra.SCT\\Downloads\\Drivers\\chromedriver.exe");
         // WebDriver driver = new ChromeDriver();
 
         ChromeOptions chromeOptions = new ChromeOptions();

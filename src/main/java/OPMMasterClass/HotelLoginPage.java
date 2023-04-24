@@ -1,4 +1,4 @@
-package PomMaster;
+package OPMMasterClass;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

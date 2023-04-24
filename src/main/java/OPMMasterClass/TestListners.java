@@ -1,9 +1,8 @@
-package PomMaster;
+package OPMMasterClass;
 
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
-import org.testng.annotations.Test;
 
 public class TestListners implements ITestListener {
     public void onStart(ITestContext context)

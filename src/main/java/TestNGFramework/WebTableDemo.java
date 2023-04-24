@@ -45,27 +45,25 @@ public class WebTableDemo {
   */
         // no of rows in a table
         int row_count = driver.findElements(By.xpath("//table[@id='product']/tbody/tr")).size();
-        System.out.println("Number of rows : "+ row_count);
+        System.out.println("Number of rows : " + row_count);
 
         // no of columns in a table
         int col_count = driver.findElements(By.xpath("//table[@id='product']/tbody/tr[2]/td")).size();
-        System.out.println("Number of columns : "+ col_count);
+        System.out.println("Number of columns : " + col_count);
 
 
         // print value from the table
         System.out.println(driver.findElement(By.xpath("//table[@id='product']/tbody/tr[2]/td[2]")).getText());
 
-        for (int i = 2; i <=row_count;i++ )
-        {
+        for (int i = 2; i <= row_count; i++) {
 
             System.out.println(driver.findElement(By.xpath("//table[@id='product']/tbody/tr[" + i + "]/td[2]")).getText());
             System.out.println(driver.findElement(By.xpath("//table[@id='product']/tbody/tr[" + i + "]/td[3]")).getText());
 
         }
-        for (int i = 2; i <=row_count;i++ )
-        {
-            for (int j=1; j<=col_count;j++)
-            System.out.println(driver.findElement(By.xpath("//table[@id='product']/tbody/tr[" + i + "]/td["+j+"]")).getText());
+        for (int i = 2; i <= row_count; i++) {
+            for (int j = 1; j <= col_count; j++)
+                System.out.println(driver.findElement(By.xpath("//table[@id='product']/tbody/tr[" + i + "]/td[" + j + "]")).getText());
             System.out.print("\u0009");
         }
         System.out.println("");
