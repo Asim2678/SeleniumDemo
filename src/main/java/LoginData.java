@@ -31,6 +31,7 @@ public class LoginData {
         System.out.println("firstname :" + firstname);
         System.out.println("lastname :" + lastname);
         System.out.println("postalcode :" + postalcode);
+
     }
 
 }
