@@ -1,6 +1,9 @@
-package OPMMasterClass;
+package TestNGFramework.ReportingTestNG;
 
-import org.testng.*;
+import org.testng.ITestContext;
+import org.testng.ITestListener;
+import org.testng.ITestResult;
+import org.testng.Reporter;
 
 public class TestListners implements ITestListener {
     public void onStart(ITestContext context)
@@ -22,7 +25,9 @@ public class TestListners implements ITestListener {
     public void onTestFailure(ITestResult result)
     {   //Invoked each time a test fails.
         System.out.println("on Test failure method:"+ result.getName());
-
+        Reporter.log("<a href=\"C:\\immages\\Error2.jpg\"  \"target=\"_blank\">Screenshot link</a>");
+        Reporter.log("<br>");
+        Reporter.log("<a href=\"C:\\immages\\Error2.jpg\"  target=\"_blank\"><img height=200 scr=\"C:\\immages\\Error2.jpg\"></a>");
 
 
     }

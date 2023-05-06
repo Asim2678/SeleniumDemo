@@ -1,12 +1,14 @@
+package UtilitiesExcelReader;
 
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-import Utilities.ExcelReader;
+
 
 public class LoginData {
 
     public static ExcelReader excel = new ExcelReader(
-            System.getProperty( "C:\\Users\\mabassra\\Downloads\\TestData.xlsx"));
+           // System.out.println(System.getProperty("user.dir"));
+            System.getProperty ("user.dir")+"\\src\\resources\\TestData.xlsx");
     String SheetName = "LoginData";
 
     @DataProvider(name = "browserdata")
@@ -27,10 +29,10 @@ public class LoginData {
     }
 
     @Test(dataProvider = "browserdata")
-    public void testReadExcelData(String firstname, String lastname,String postalcode) {
+    public void testReadExcelData(String firstname, String lastname,String postcode) {
         System.out.println("firstname :" + firstname);
         System.out.println("lastname :" + lastname);
-        System.out.println("postalcode :" + postalcode);
+        System.out.println("postalcode :" + postcode);
 
     }
 

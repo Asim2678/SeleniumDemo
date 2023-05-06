@@ -13,8 +13,8 @@ public class HotelLoginPage {
 
     // identify all web elements
     By username=By.xpath("//input[@id='username']");
-    By password=By.xpath("//input[@id='password']")	;
-    By btnLogin=By.xpath("//input[@id='login']")	;
+    By password=By.xpath("//input[@id='password']");
+    By btnLogin=By.xpath("//input[@id='login']");
 
     public void setUsername(String strUsername )
     {

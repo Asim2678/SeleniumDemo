@@ -1,4 +1,4 @@
-package Utilities;
+package UtilitiesExcelReader;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -506,7 +506,8 @@ public class ExcelReader {
         ExcelReader datatable = null;
 
 
-        datatable = new ExcelReader("C:\\CM3.0\\app\\test\\Framework\\AutomationBvt\\src\\config\\xlfiles\\Controller.xlsx");
+       // datatable = new ExcelReader("C:\\CM3.0\\app\\test\\Framework\\AutomationBvt\\src\\config\\xlfiles\\Controller.xlsx");
+        datatable = new ExcelReader(("user.dir")+"\\src\\resources\\TestData.xlsx");
         for(int col=0 ;col< datatable.getColumnCount("TC5"); col++){
             System.out.println(datatable.getCellData("TC5", col, 1));
         }
